@@ -71,3 +71,12 @@ Source: the 17 saved pages in `Old Website ` and the published Google Site homep
 | Candidate Support Faculty | opportunities.html |
 | Accomplished Teaching | teaching.html |
 | Contact Us | contact.html |
+
+## Updated program photography
+
+The homepage, readers, community, and events pages now use actual stills from the National Board Program video. Original frames remain unchanged; CSS controls display cropping.
+
+- educator-collaboration.png — scene_037_01m48s.png
+- reader-feedback.png — scene_077_03m50s.png
+- community-conversation.png — scene_120_05m46s.png
+- writing-retreat.png — scene_025_01m10s.png
