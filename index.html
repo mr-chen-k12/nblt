@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore two website design directions for the Boston Public Schools / Boston Teachers Union National Board Program.">
+  <title>Website Design Review | Boston National Board</title>
+  <style>
+    :root{color-scheme:light;--ink:#182d3e;--muted:#586877;--line:#dce3e8;--paper:#f5f7f9}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    a{color:inherit;text-underline-offset:4px}
+    a:focus-visible{outline:3px solid #b48729;outline-offset:6px}
+    .skip{position:absolute;top:-100px;left:20px;padding:10px 20px;background:white;z-index:5}.skip:focus{top:10px}
+    .wrap{max-width:1200px;margin:auto;padding:0 36px}
+    header{background:white;border-bottom:1px solid var(--line)}
+    header .wrap{min-height:100px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:15px}.monogram{display:grid;place-items:center;background:#182d3e;color:#edcc81;width:48px;height:52px;border-radius:4px 4px 16px 4px;font:700 25px Georgia,serif}
+    .brand strong{font-size:1rem;display:block;line-height:1.35}.brand small{display:block;text-transform:uppercase;font-size:.72rem;letter-spacing:.12em;color:var(--muted);margin-top:5px}
+    .review-label{font-size:.8rem;border:1px solid var(--line);border-radius:30px;padding:7px 14px;color:var(--muted);white-space:nowrap}
+    .intro{padding:65px 0 36px;max-width:800px}.eyebrow{font-size:.75rem;letter-spacing:.17em;font-weight:700;text-transform:uppercase;color:#43646b;margin:0 0 16px}
+    h1{font:400 clamp(2.5rem,5vw,4.3rem)/1.08 Georgia,"Times New Roman",serif;letter-spacing:-.04em;margin:0 0 22px}
+    .intro>p:last-child{color:var(--muted);font-size:1.12rem;max-width:690px;margin:0}
+    .options{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:12px 0 40px}
+    .option{display:flex;flex-direction:column;background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 6px 24px #182d3e05}
+    .preview{position:relative;display:block;text-decoration:none;background:#102d40;overflow:hidden;aspect-ratio:1.65;border-bottom:1px solid var(--line)}
+    .preview img{display:block;width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .25s}
+    .preview:hover img{transform:scale(1.025)}.preview:focus-visible{outline-offset:-5px}
+    .browserbar{height:29px;display:flex;align-items:center;gap:5px;background:#edf1f4;padding:0 14px;border-bottom:1px solid var(--line)}.browserbar i{width:6px;height:6px;background:#b9c3cb;border-radius:50%}.browserbar span{font-size:.65rem;letter-spacing:.035em;color:#63717c;margin-left:8px}
+    .body{padding:28px 30px 30px;flex:1;display:flex;flex-direction:column}
+    .option-top{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:15px}.number{color:#657782;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+    .palette{display:flex;gap:5px}.palette i{height:13px;width:13px;border-radius:50%;border:1px solid #00000012}
+    h2{font:400 2.15rem/1.15 Georgia,"Times New Roman",serif;letter-spacing:-.03em;margin:0 0 14px}
+    .body p{color:var(--muted);margin:0 0 21px;line-height:1.65}
+    .features{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 27px;padding:0;list-style:none}.features li{background:#f1f5f5;color:#45616a;font-size:.78rem;padding:4px 10px;border-radius:4px}
+    .button{display:block;text-align:center;padding:13px 18px;border-radius:6px;color:white;background:#17655e;font-weight:600;text-decoration:none;margin-top:auto}.button:hover{background:#104f49}
+    .editorial .button{background:#21153e}.editorial .button:hover{background:#38245e}.editorial .features li{background:#f2eef8;color:#635078}
+    .note{border-top:1px solid var(--line);padding:28px 0 38px;display:grid;grid-template-columns:1fr 2fr;gap:35px}.note h2{font:600 1rem/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:0;margin:0}.note p{margin:0;color:var(--muted);font-size:.95rem}
+    footer{border-top:1px solid var(--line);background:white}.footer-inner{padding-top:22px;padding-bottom:22px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:.8rem}
+    @media(max-width:700px){.wrap{padding-left:22px;padding-right:22px}header .wrap{min-height:88px}.brand strong{font-size:.9rem}.brand small{font-size:.62rem}.monogram{width:39px;height:44px;font-size:21px}.review-label{display:none}.intro{padding-top:40px;padding-bottom:28px}.intro>p:last-child{font-size:1rem}.options{grid-template-columns:1fr;gap:25px}.body{padding:25px}.note{grid-template-columns:1fr;gap:12px}.footer-inner{flex-direction:column;gap:8px}h2{font-size:2rem}}
+    @media(prefers-reduced-motion:reduce){.preview img{transition:none}.preview:hover img{transform:none}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to design options</a>
+  <header><div class="wrap"><div class="brand"><span class="monogram" aria-hidden="true">NB</span><div><strong>Boston National Board</strong><small>Boston Public Schools / Boston Teachers Union</small></div></div><span class="review-label">Website design review</span></div></header>
+  <main class="wrap" id="main">
+    <section class="intro" aria-labelledby="page-title"><p class="eyebrow">One community. Two directions.</p><h1>A new home for<br>accomplished teaching.</h1><p>Explore two approaches to the BPS/BTU National Board Program website. Each brings our resources, support, and community together—with a different visual personality.</p></section>
+    <div class="options">
+      <article class="option" aria-labelledby="classic-title">
+        <div class="browserbar" aria-hidden="true"><i></i><i></i><i></i><span>BOSTON NATIONAL BOARD · PROTOTYPE 1</span></div>
+        <a class="preview" href="prototype1/index.html" aria-label="Preview prototype 1: Clear & connected"><img src="prototype1/preview.jpg" width="1440" height="1000" alt="Prototype 1 homepage with a navy and teal theme, gold accents, and educator photos"></a>
+        <div class="body"><div class="option-top"><span class="number">Prototype 1</span><span class="palette" aria-hidden="true"><i style="background:#102d40"></i><i style="background:#17655e"></i><i style="background:#dfb65d"></i></span></div><h2 id="classic-title">Clear &amp; connected</h2><p>A calm, professional direction with structured layouts, intuitive navigation, and a navy, teal, and gold palette. Designed to make the next step easy to find.</p><ul class="features" aria-label="Design qualities"><li>Clean &amp; structured</li><li>Resource focused</li><li>Approachable</li></ul><a class="button" href="prototype1/index.html">Explore prototype 1</a></div>
+      </article>
+      <article class="option editorial" aria-labelledby="editorial-title">
+        <div class="browserbar" aria-hidden="true"><i></i><i></i><i></i><span>BOSTON NATIONAL BOARD · PROTOTYPE 2</span></div>
+        <a class="preview" href="prototype2/index.html" aria-label="Preview prototype 2: Bold & inspiring"><img src="prototype2/preview.jpg" width="1440" height="2542" alt="Prototype 2 homepage with expressive serif typography, deep purple and gold, and arched educator photography"></a>
+        <div class="body"><div class="option-top"><span class="number">Prototype 2</span><span class="palette" aria-hidden="true"><i style="background:#191137"></i><i style="background:#293fcf"></i><i style="background:#fc7c69"></i><i style="background:#edc86f"></i></span></div><h2 id="editorial-title">Bold &amp; inspiring</h2><p>An expressive editorial direction with oversized typography, rich colors, and curved photo treatments. Designed to put educators and possibility at the center.</p><ul class="features" aria-label="Design qualities"><li>Editorial style</li><li>Vibrant &amp; expressive</li><li>Community centered</li></ul><a class="button" href="prototype2/index.html">Explore prototype 2</a></div>
+      </article>
+    </div>
+    <section class="note" aria-labelledby="review-title"><h2 id="review-title">As you explore</h2><p>Consider which direction feels most welcoming to Boston educators, makes resources easiest to find, and best reflects the program. Both prototypes include the same core content, mobile-friendly layouts, and a searchable resource library.</p></section>
+  </main>
+  <footer><div class="wrap footer-inner"><span>BPS / BTU National Board Program · Design concepts for team review</span><a href="https://sites.google.com/bostonpublicschools.org/nblt/home">Visit the current program website</a></div></footer>
+</body>
+</html>
