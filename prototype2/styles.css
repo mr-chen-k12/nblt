@@ -48,3 +48,10 @@
 .film-caption{padding:13px 10px;font-size:.8rem;gap:12px}
 @media(max-width:850px){.program-film{padding:42px 0}.program-film>.wrap{grid-template-columns:1fr;gap:27px}.film-heading,.film-frame{width:100%;max-width:640px;justify-self:center}.film-heading>p{max-width:560px;margin-top:17px}.film-frame{width:calc(100% - 10px)}}
 @media(max-width:480px){.film-heading h2{font-size:2.1rem}.film-caption{font-size:.75rem}.film-caption>span{max-width:145px}}
+
+/* Editorial film: give the right-aligned player more prominence. */
+@media(min-width:851px){
+ .program-film>.wrap{grid-template-columns:minmax(230px,.65fr) minmax(0,1.65fr);gap:40px}
+ .program-film .film-frame{max-width:840px;width:calc(100% - 10px);justify-self:end;margin-right:10px}
+ .program-film .film-heading>p{max-width:320px}
+}
